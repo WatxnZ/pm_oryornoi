@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>บิงโกนับคาร์บ | ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <!-- fist page -->
+      <div>
+        <h1>บิงโกนับคาร์บ</h1>
+        <div>
+          <p class="pnormal" style="text-indent: 2rem">
+            บิงโกนับคาร์บ เป็นเกมสนุก ๆ
+            ที่ออกแบบมาเพื่อช่วยให้ผู้เรียนรู้สามารถจดจำปริมาณคาร์โบไฮเดรตในอาหารแต่ละชนิดได้ง่ายขึ้น
+            โดยรูปแบบของเกมจะเหมือนเกมบิงโกทั่วไป แต่แทนที่จะเป็นตัวเลข
+            เกมนี้จะแสดง “ภาพอาหาร” พร้อมกับ “ปริมาณคาร์บต่อหน่วย”
+          </p>
+
+          <p class="pnormal" style="text-indent: 2rem; margin-top: 2rem">
+            การนับคาร์บ (Carb Counting) คือ
+            การวางแผนการบริโภคคาร์โบไฮเดรตในแต่ละมื้ออาหารอย่างมีระบบ
+            โดยเฉพาะอย่างยิ่งสำหรับผู้ป่วยเบาหวาน
+            ซึ่งต้องควบคุมระดับน้ำตาลในเลือดให้อยู่ในเกณฑ์ที่ปลอดภัยอย่างสม่ำเสมอ
+            คาร์โบไฮเดรตเป็นสารอาหารที่มีผลโดยตรงต่อระดับน้ำตาลในเลือด
+            ดังนั้นการรู้ว่าอาหารชนิดใดมีคาร์บเท่าไหร่จึงเป็นกุญแจสำคัญในการจัดการโรคเบาหวานอย่างมีประสิทธิภาพ
+            <span style="color: #1c8ce4; text-decoration: underline"
+              ><a
+                href="https://heyzine.com/flip-book/980e8e587f.html"
+                target="_blank"
+                >คู่มือนับคาร์บออนไลน์ฉบับ ชมรม อย. น้อยโรงเรียนพิบูลมังสาหาร</a
+              ></span
+            >
+          </p>
+
+          <div class="small-card-grid">
+            <div class="card" style="margin-top: 4rem">
+              <img
+                src="https://img2.pic.in.th/pic/bingod015e8ee2863243c.png"
+                alt=""
+              />
+            </div>
+          </div>
+
+          <div style="text-align: center">
+            <a
+              href="https://gofile.io/d/5MxUdQ"
+              target="_blank"
+              class="bingo-button"
+            >
+              📄 เปิดไฟล์ PDF "บิงโกนับคาร์บ"
+            </a>
+            <p
+              style="margin-top: 1.5rem; margin-left: 1rem; margin-right: 1rem"
+            >
+              ไฟล์จะถูกลบหากไม่มีคนเปิดดูเป็นเวลานาน<br />หากต้องการไฟล์
+              ท่านสามารถ<a
+                href="contact.html"
+                style="color: #1c8ce4; text-decoration: underline"
+                >ติดต่อเรา</a
+              >เพื่อขอไฟล์ได้เลย
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

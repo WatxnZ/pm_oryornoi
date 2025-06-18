@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>คลินิก อย. น้อย | ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <div>
+        <h1>คลินิก อย. น้อย</h1>
+        <p class="pnormal" style="text-indent: 2rem">
+          ศูนย์ให้คำปรึกษาและบริการด้านสุขภาพ การเรียน และการบริโภคอย่างปลอดภัย
+          โดยมีเป้าหมายเพื่อส่งเสริมคุณภาพชีวิตที่ดีทั้งด้านร่างกาย จิตใจ
+          และการศึกษา<br /><br />
+
+          • ให้คำปรึกษาสุขภาพ พร้อมชั่งน้ำหนัก วัดส่วนสูง และคำนวณ
+          <u><a href="BMI calculate.html" style="color: #1c8ce4">BMI </a></u
+          ><br />
+          • วัดความดันโลหิต เพื่อเฝ้าระวังโรคไม่ติดต่อเรื้อรัง<br />
+          • ตรวจสารในผลิตภัณฑ์ด้วยชุด Test Kit เพื่อความปลอดภัยในการบริโภค
+          <br />
+          • ตรวจเลข อย. และเลขจดแจ้ง ป้องกันการใช้สินค้าที่ไม่ได้มาตรฐาน<br />
+          • รับแจ้งปัญหาเกี่ยวกับการบริโภค เช่น อาหารเสริม ยา และเครื่องสำอาง<br />
+          • ให้คำปรึกษาด้านการเรียน การเลือกมหาวิทยาลัย และแนวทางศึกษาต่อ<br />
+          • ให้คำปรึกษาสุขภาพจิตเบื้องต้น ทั้งความเครียด ความกังวล และอารมณ์<br />
+        </p>
+      </div>
+
+      <!-- ภาพเลื่อน -->
+      <div class="min-h-screen py-8">
+        <div class="slider-container">
+          <h2 class="text-4xl font-bold text-center mb-6 text-gray-800">
+            รูปภาพกิจกรรม
+          </h2>
+
+          <div class="slider-wrapper">
+            <!-- พื้นที่แสดงภาพ -->
+            <div class="relative overflow-hidden">
+              <div class="slider-track" id="sliderTrack">
+                <div class="slide" data-caption="ตรวจความดันเลือด">
+                  <img
+                    src="https://img5.pic.in.th/file/secure-sv1/20507b7ef5899dd64713a.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide" data-caption="ภาพผู้ร่วมกิจกรรม">
+                  <img src="https://img2.pic.in.th/pic/20499.jpg" alt="" />
+                </div>
+                <div class="slide" data-caption="ภาพผู้ร่วมกิจกรรม">
+                  <img
+                    src="https://img5.pic.in.th/file/secure-sv1/20500.jpg"
+                    alt=""
+                  />
+                </div>
+                <div class="slide" data-caption="ภาพผู้ร่วมกิจกรรม">
+                  <img
+                    src="https://img2.pic.in.th/pic/20502418c8a722f5d5e43.jpg"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <!-- ปุ่มเลื่อนซ้าย -->
+              <button class="nav-button prev" id="prevBtn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="15,18 9,12 15,6"></polyline>
+                </svg>
+              </button>
+
+              <!-- ปุ่มเลื่อนขวา -->
+              <button class="nav-button next" id="nextBtn">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <polyline points="9,18 15,12 9,6"></polyline>
+                </svg>
+              </button>
+
+              <!-- แสดงสถานะการเลื่อนอัตโนมัติ -->
+              <div class="status-badge status-auto" id="statusBadge">Auto</div>
+            </div>
+
+            <!-- จุดแสดงจำนวนภาพ -->
+            <div class="dots-container" id="dotsContainer">
+              <button class="dot active" data-index="0"></button>
+              <button class="dot" data-index="1"></button>
+              <button class="dot" data-index="2"></button>
+              <button class="dot" data-index="3"></button>
+            </div>
+
+            <!-- ข้อมูลภาพปัจจุบัน -->
+            <div class="info-section">
+              <p class="text-gray-600 text-sm">
+                ภาพที่ <span id="currentSlide">1</span> จาก
+                <span id="totalSlides">4</span>
+              </p>
+              <p class="text-gray-800 font-medium mt-1" id="slideTitle"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

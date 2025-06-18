@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>เกี่ยวกับชมรม | ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <!-- fist page -->
+      <div>
+        <h1>ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</h1>
+        <div>
+          <p class="pnormal" style="text-indent: 2rem">
+            ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร ก่อตั้งขึ้นเมื่อปี พ.ศ 2567
+            โดยชมรม อย.น้อย
+            ถูกก่อตั้งขึ้นเพื่อให้นักเรียนมีการเรียนรู้จากการปฏิบัติจริงและได้ช่วยเหลือเพื่อน
+            ๆ ครอบครัว และชุมชน ด้วยการให้ความรู้การบริโภคอย่างเหมาะสม
+            โดยทางชมรม อย.น้อยมีการดำเนินงานทั้งหมด 7 เกณฑ์ ดังนี้ <br /><br />
+
+            1. เกณฑ์มาตรฐานที่ 1 โครงสร้างชมรม/ชุมนุม และองค์ประกอบ<br />
+            2. เกณฑ์มาตรฐานที่ 2 กิจกรรมเผยแพร่ ประชาสัมพันธ์ และรณรงค์<br />
+            3. เกณฑ์มาตรฐานที่ 3 กิจกรรมด้านการตรวจสอบ<br />
+            4. เกณฑ์มาตรฐานที่ 4 กิจกรรมส่งเสริมสุขภาพ<br />
+            5. เกณฑ์มาตรฐานที่ 5 กิจกรรมบูรณาการสู่การเรียนการสอน<br />
+            6. เกณฑ์มาตรฐานที่ 6 การสนับสนุนชมรม/ชุมนุม อย.น้อย<br />
+            7. เกณฑ์มาตรฐานที่ 7 กิจกรรมพิเศษอื่น ๆ<br /><br />
+          </p>
+
+          <p class="pnormal" style="text-indent: 2rem">
+            โดยบริหารแบ่งงานเป็นระบบแม่งาน ระบบแม่งาน หมายถึง
+            ระบบการบริหารจัดการงานที่แบ่งความรับผิดชอบออกเป็นส่วนย่อย ๆ
+            โดยในแต่ละส่วนจะมีผู้รับผิดชอบหลักซึ่งเรียกว่า “แม่งาน” เช่น
+            แม่งานด้านเนื้อหา แม่งานด้านกราฟิก หรือแม่งานด้านContent เป็นต้น<br /><br />
+          </p>
+
+          <p class="pnormal" style="text-indent: 2rem">
+            จุดเด่นของระบบแม่งาน คือ
+            การกำหนดบทบาทและหน้าที่ของแต่ละบุคคลอย่างชัดเจน
+            ส่งเสริมให้สมาชิกในทีมสามารถใช้ความถนัดและศักยภาพของตนได้อย่างเต็มที่
+            ทั้งนี้ แม่งานในแต่ละฝ่ายจะมีการประสานงานร่วมกันอย่างต่อเนื่อง
+            เพื่อให้งานในแต่ละส่วนสามารถเชื่อมโยงและสนับสนุนซึ่งกันและกัน
+            อันนำไปสู่ผลลัพธ์ที่มีความลงตัว
+          </p>
+        </div>
+      </div>
+
+      <div class="banner-wrapper">
+        <img
+          src="https://img5.pic.in.th/file/secure-sv1/S__27811842116a2934f6d7d8b2.jpg"
+          alt=""
+          class="banner-image"
+        />
+      </div>
+    </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

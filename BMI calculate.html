@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>คำนวนค่า BMI | ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <div class="bmi-section">
+        <h1>โปรแกรมคำนวนค่า BMI อัตโนมัติ</h1>
+        <p class="pnormal" style="text-indent: 2rem">
+          ใช้คำนวณดัชนีมวลกาย (BMI)
+          เพื่อประเมินภาวะน้ำหนักของร่างกายตามค่ามาตรฐาน
+        </p>
+
+        <div
+          class="bmi-card"
+          style="
+            max-width: 500px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+          "
+        >
+          <label for="weight">น้ำหนัก (กิโลกรัม):</label><br />
+          <input
+            type="number"
+            id="weight"
+            placeholder="เช่น 60"
+            style="margin-bottom: 1rem; padding: 0.5rem; width: 100%"
+          /><br />
+
+          <label for="height">ส่วนสูง (เซนติเมตร):</label><br />
+          <input
+            type="number"
+            id="height"
+            placeholder="เช่น 170"
+            style="margin-bottom: 1rem; padding: 0.5rem; width: 100%"
+          /><br />
+
+          <button
+            onclick="calculateBMI()"
+            style="
+              background-color: #1c8ce4;
+              color: white;
+              border: none;
+              padding: 0.75rem 2rem;
+              border-radius: 6px;
+              cursor: pointer;
+            "
+          >
+            คำนวณ BMI
+          </button>
+
+          <p id="bmi-result" style="margin-top: 1rem; font-weight: bold"></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

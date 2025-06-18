@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>บิงโกนับคาร์บออนไลน์ | อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <!-- fist page -->
+      <div>
+        <h1>บิงโกนับคาร์บฉบับออนไลน์</h1>
+        <div>
+          <p class="pnormal" style="text-indent: 2rem">
+            เกมบิงโกนับคาร์บออนไลน์
+            พัฒนามาจากเกมบิงโกนับคาร์บถบับกระดาษที่มีข้อจำกัดด้านจำนวนผู้เล่นที่รองรับได้น้อย
+            และด้วยสาเหตุนั้นเราในถานะ อย. น้อย โรงเรียนพิบูลมังสาหาร
+            ที่ได้เล็งเห็นถึงปัญหาที่เกิดขึ้น จึงนำมาแก้ไขและพัฒนาต่อ
+            จึงได้ผลงานชิ้นนี้ออกมาซึ่งก็คือ "เกมบิงโกนับคาร์บออนไลน์"
+            ที่สามารถเล่นได้ทุกที่ รองรับผู้เล่นไม่จำกัดจำนวน มีระบบต่าง ๆ
+            ให้ลองเล่นได้อย่างเต็มที่ ซึ่งผู้เล่นจะได้รับทั้งความรู้
+            ความคิดสร้างสรรค์ ทักษะการสังเกต และได้พัฒนาความสามารถด้านการสื่อสาร
+          </p>
+          <br />
+
+          <p class="pnormal" style="text-indent: 2rem">
+            และหากทุกท่านสนใจอยากลองร่วมสนุก ท่านสามารถ
+
+            <a
+              style="color: #1c8ce4"
+              href="https://script.google.com/macros/s/AKfycbzmp-JhKQgovprtBZZ9Dc3PSaw0_rFu7JcSRVErj68phIXSVvl4JqJLbF_9PaY-jlxL/exec"
+              target="_blank"
+              ><u>กดที่นี่</u></a
+            >
+            เพื่อลองเข้าไปเล่นเกมที่ทางเราได้พัฒนาได้เลย โดยในเกมจะมีให้เลือก
+            <span style="color: #1c8ce4">2</span> บทบาท คือ
+            <span style="color: #1c8ce4">1)</span> ผู้ควบคุม
+            ซึ่งทำหน้าที่เป็นกรรมการในการสุ่มการ์ดให้ผู้เล่นได้กด และ
+            <span style="color: #1c8ce4">2)</span> ผู้เล่น
+            ผู้เล่นต้องทำการกดการ์ดที่กรรมการสุ่มได้ และรอตอบคำถามต่าง ๆ
+            ซึ่งมีในระบบ โดยในแต่ละคำถามจะช่วยให้ผู้ที่เล่นเกมนี้ได้ฝึกสมอง
+            และได้รับความรู้เพิ่มเติมด้วย
+            <span style="color: #1c8ce4; text-decoration: underline"
+              ><a
+                href="https://heyzine.com/flip-book/980e8e587f.html"
+                target="_blank"
+                >คู่มือนับคาร์บออนไลน์ฉบับ ชมรม อย. น้อยโรงเรียนพิบูลมังสาหาร</a
+              ></span
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="small-card-grid">
+        <div class="card" style="margin-top: 4rem">
+          <a
+            href="https://script.google.com/macros/s/AKfycbzmp-JhKQgovprtBZZ9Dc3PSaw0_rFu7JcSRVErj68phIXSVvl4JqJLbF_9PaY-jlxL/exec"
+            target="_blank"
+          >
+            <img
+              src="https://img5.pic.in.th/file/secure-sv1/bingo1.png"
+              alt=""
+            />
+          </a>
+
+          <div style="text-align: center">
+            <a
+              href="https://script.google.com/macros/s/AKfycbzmp-JhKQgovprtBZZ9Dc3PSaw0_rFu7JcSRVErj68phIXSVvl4JqJLbF_9PaY-jlxL/exec"
+              target="_blank"
+              class="bingo-button"
+              style="color: white; text-decoration: none;"
+            >
+              เล่นเลย
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>

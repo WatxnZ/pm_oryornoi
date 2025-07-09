@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://img5.pic.in.th/file/secure-sv1/afc232858f422859d.png"
+      type="image/x-icon"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ผลงาน | ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.js"></script>
+  </head>
+
+  <body>
+    <div id="loader"><span>.</span><span>.</span><span>.</span></div>
+    <div id="content" style="display: none">
+      <!-- เนื้อหาเว็บ -->
+
+      <!-- ประกาศ -->
+      <div id="image-popup" class="popup-overlay" style="display: none">
+        <div class="popup-content">
+          <button id="close-popup" class="close-btn">X</button>
+          <img id="popup-image" src="" alt="" />
+          <p id="popup-message"></p>
+          <label class="dont-show-label">
+            <input type="checkbox" id="dont-show-checkbox" /> ไม่แสดงอีกเลย
+          </label>
+        </div>
+      </div>
+
+      <!-- menu -->
+      <nav>
+        <div class="logo-section">
+          <a href="index.html"> <div class="logo"></div></a>
+          <div class="brand">
+            <a href="index.html">ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</a>
+          </div>
+        </div>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <p style="margin-left: 25vh">☰</p>
+        </div>
+
+        <div class="menu" id="menu">
+          <a href="index.html">หน้าแรก</a>
+          <div class="dropdown">
+            <a href="#" class="dropdown-toggle">เกี่ยวกับ ▾</a>
+            <div class="dropdown-menu">
+              <a href="about.html">เกี่ยวกับชมรม</a>
+              <a href="BMI calculate.html">คำนวนค่า BMI</a>
+              <a href="BMR-TDEE.html">คำนวนค่า BMR & TDEE</a>
+            </div>
+          </div>
+
+          <a href="president.html">ธรรมเนียบ</a>
+          <a href="contact.html">ติดต่อ</a>
+        </div>
+      </nav>
+
+      <!-- fist page -->
+      <div>
+        <h1>ชมรม อย.น้อย โรงเรียนพิบูลมังสาหาร</h1>
+        <div>
+          <p class="pnormal">
+            ได้รับโล่รางวัล ผลงานเครือข่ายโดดเด่นยอดเยี่ยม Best of the best 2025
+            จำนวน 2 โล่รางวัล ได้แก่<br /><br />
+            1.Best practice ระดับประเทศ ด้านสื่อสร้างสรรค์
+            ประเภทโรงเรียนขนาดใหญ่ (เขตสุขภาพที่10)br 2.Beat of the best
+            ระดับประเทศ<br /><br />
+            ด้านสื่อสร้างสรรค์ ประเภทโรงเรียนขนาดใหญ่ โดยมีตัวแทนนักเรียนแกนนำ
+            อย.น้อย เข้าร่วมการแข่งขันในครั้งนี้ จำนวน 6 คน ได้แก่<br />
+            นางสาวสุดารัตน์ พันธง <br />
+            นางสาวศิริกัลยา แสนพินิจ <br />
+            นางสาวยศวดี ถนอมใจ <br />
+            นางสาวกัญญ์ญาณัฐ ธนโรจน์ภักดีกุล <br />
+            นางสาวพัชราภรณ์ นาล้วน <br />
+            ครูผู้กำกับและดูแล<br />
+            1.นางศิริพรพรรณ พวงจันทึก ครูชำนาญการพิเศษ<br />
+            2.นายอภิวัตร กูบกระโทก ครู<br /><br />
+
+            ในวันที่ 19-20 มิถุนายน 2568 <br />
+            ณ โรงแรมเซนทารา ศูนย์ราชการและคอนเวนชันเซ็นเตอร์ แจ้งวัฒนะ
+            กรุงเทพฯ<br /><br />
+
+            โดยมีนายแพทย์โอภาส การย์กวินพงศ์ <br />
+            ปลัดกระทรวงสาธารณสุข เป็นประธาน<br />
+            ทั้งนี้มีชุมชน (บวร.ร.) และสถานศึกษา <br />
+            (โรงเรียน อย.น้อย) ที่มีผลการดำเนินงานโดดเด่น<br />
+            (BEST PRACTICE) เข้าร่วมคัดเลือก จำนวน 65 แห่งทั่วประเทศ<br />
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin-left: 3rem; margin-right: 3rem">
+      <div class="card" style="margin-top: 4rem">
+        <img src="https://img2.pic.in.th/pic/page-2.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-3.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-4.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-5.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-6.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-7.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-8.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-9.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-10.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-11.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-12.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-13.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-14.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-15.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-16.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-17.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-18.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-19.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-20.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-21.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-22.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-23.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-24.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-25.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-26.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-27.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-28.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-29.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-30.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-31.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-32.png" />
+      </div>
+      <div class="card">
+        <img src="https://img2.pic.in.th/pic/page-33.png" />
+      </div>
+      <div class="card">
+        <img src="https://img5.pic.in.th/file/secure-sv1/page-34.png" />
+      </div>
+      </div>
+
+    <!-- footer banner -->
+    <footer>
+      <div class="ifooter">
+        <div class="copyright">
+          @ Powered by
+          <a href="https://pages.github.com/" target="_blank">Github Page</a> |
+          นายวทัญญู ทนงค์ ม.6/3 (ผู้พัฒนาเว็บไซต์)
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="script.js"></script>
+</html>
